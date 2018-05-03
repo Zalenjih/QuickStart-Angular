@@ -1,3 +1,16 @@
-<p>
-  cabecera works!
-</p>
+
+<h1 class="container bg-dark text-white text-center my-4 py-4">[ngClass]</h1>
+
+<div class="container">
+
+  <button class="btn btn-dark mb-3" (click)="activo = 'primero'">Primero</button>
+  <button class="btn btn-dark mb-3" (click)="activo = 'segundo'">Segundo</button>
+
+  <p class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolores voluptate, tempore doloribus beatae sed accusantium
+    minima quia facilis magnam. Maxime rem sed, repellendus delectus voluptate impedit minima illo cupiditate?</p>
+
+  <p class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa ullam optio illo non animi accusantium in exercitationem
+    ipsa, est tenetur sit numquam harum beatae deserunt minus modi repudiandae? Reiciendis.</p>
+
+</div>
+
